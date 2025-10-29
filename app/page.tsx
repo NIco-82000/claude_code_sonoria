@@ -99,22 +99,16 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <GradientButton
-              size="xl"
-              variant="gradient"
-              trackingLabel="hero-demo"
-              asChild
-            >
-              <Link href="/contact">{content.hero.cta.primary}</Link>
-            </GradientButton>
-            <GradientButton
-              size="xl"
-              variant="ghost"
-              trackingLabel="hero-integrations"
-              asChild
-            >
-              <Link href="/integrations">{content.hero.cta.secondary}</Link>
-            </GradientButton>
+            <Link href="/contact">
+              <GradientButton size="xl" variant="gradient" trackingLabel="hero-demo">
+                {content.hero.cta.primary}
+              </GradientButton>
+            </Link>
+            <Link href="/integrations">
+              <GradientButton size="xl" variant="ghost" trackingLabel="hero-integrations">
+                {content.hero.cta.secondary}
+              </GradientButton>
+            </Link>
           </div>
 
           <div className="w-full h-48 rounded-lg glass overflow-hidden">
@@ -259,22 +253,16 @@ export default function Home() {
             Rejoignez les entreprises qui transforment leurs interactions vocales avec Sonoya AI.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <GradientButton
-              size="xl"
-              variant="gradient"
-              trackingLabel="cta-large-demo"
-              asChild
-            >
-              <Link href="/contact">Demander une démo</Link>
-            </GradientButton>
-            <GradientButton
-              size="xl"
-              variant="outline"
-              trackingLabel="cta-large-expert"
-              asChild
-            >
-              <Link href="/contact">Parler à un expert</Link>
-            </GradientButton>
+            <Link href="/contact">
+              <GradientButton size="xl" variant="gradient" trackingLabel="cta-large-demo">
+                Demander une démo
+              </GradientButton>
+            </Link>
+            <Link href="/contact">
+              <GradientButton size="xl" variant="outline" trackingLabel="cta-large-expert">
+                Parler à un expert
+              </GradientButton>
+            </Link>
           </div>
         </div>
       </Section>

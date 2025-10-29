@@ -57,14 +57,15 @@ export function PricingTable({ plans }: PricingTableProps) {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button
-                asChild
-                variant={plan.popular ? 'gradient' : 'outline'}
-                size="lg"
-                className="w-full"
-              >
-                <Link href={plan.ctaLink}>{plan.cta}</Link>
-              </Button>
+              <Link href={plan.ctaLink} className="w-full">
+                <Button
+                  variant={plan.popular ? 'gradient' : 'outline'}
+                  size="lg"
+                  className="w-full"
+                >
+                  {plan.cta}
+                </Button>
+              </Link>
             </CardFooter>
           </Card>
         </motion.div>

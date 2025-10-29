@@ -171,9 +171,11 @@ export default function IntegrationsPage() {
         </div>
 
         <div className="mt-12 text-center">
-          <GradientButton variant="gradient" size="lg" trackingLabel="integrations-docs" asChild>
-            <Link href="/contact">Accéder à la documentation</Link>
-          </GradientButton>
+          <Link href="/contact">
+            <GradientButton variant="gradient" size="lg" trackingLabel="integrations-docs">
+              Accéder à la documentation
+            </GradientButton>
+          </Link>
         </div>
       </Section>
 
@@ -184,9 +186,11 @@ export default function IntegrationsPage() {
           <p className="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
             Notre équipe peut développer des connecteurs sur-mesure pour vos outils internes.
           </p>
-          <GradientButton variant="gradient" size="xl" trackingLabel="integrations-custom" asChild>
-            <Link href="/contact">Parler à un expert</Link>
-          </GradientButton>
+          <Link href="/contact">
+            <GradientButton variant="gradient" size="xl" trackingLabel="integrations-custom">
+              Parler à un expert
+            </GradientButton>
+          </Link>
         </div>
       </Section>
     </>

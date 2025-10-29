@@ -243,9 +243,11 @@ export default function FeaturesPage() {
         >
           <div className="glass px-6 py-4 rounded-full shadow-soft flex items-center gap-4">
             <span className="text-sm font-medium">Prêt à démarrer ?</span>
-            <GradientButton variant="gradient" size="default" trackingLabel="features-cta" asChild>
-              <Link href="/contact">Demander une démo</Link>
-            </GradientButton>
+            <Link href="/contact">
+              <GradientButton variant="gradient" size="default" trackingLabel="features-cta">
+                Demander une démo
+              </GradientButton>
+            </Link>
           </div>
         </motion.div>
       </div>

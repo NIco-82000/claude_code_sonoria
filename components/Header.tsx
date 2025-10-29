@@ -36,9 +36,9 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
           {navigation.cta.map((item) => (
-            <Button key={item.name} asChild variant="gradient" size="default">
-              <Link href={item.href}>{item.name}</Link>
-            </Button>
+            <Link key={item.name} href={item.href}>
+              <Button variant="gradient" size="default">{item.name}</Button>
+            </Link>
           ))}
         </div>
 
@@ -78,11 +78,9 @@ export function Header() {
               ))}
               <div className="pt-4 border-t border-border">
                 {navigation.cta.map((item) => (
-                  <Button key={item.name} asChild variant="gradient" size="lg" className="w-full">
-                    <Link href={item.href} onClick={() => setMobileMenuOpen(false)}>
-                      {item.name}
-                    </Link>
-                  </Button>
+                  <Link key={item.name} href={item.href} onClick={() => setMobileMenuOpen(false)}>
+                    <Button variant="gradient" size="lg" className="w-full">{item.name}</Button>
+                  </Link>
                 ))}
               </div>
             </div>

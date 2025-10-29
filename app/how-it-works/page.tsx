@@ -217,9 +217,11 @@ export default function HowItWorksPage() {
             Réservez une démo personnalisée et découvrez comment Sonoya AI peut transformer vos
             interactions vocales.
           </p>
-          <GradientButton variant="gradient" size="xl" trackingLabel="how-demo" asChild>
-            <Link href="/contact">Réserver une démo</Link>
-          </GradientButton>
+          <Link href="/contact">
+            <GradientButton variant="gradient" size="xl" trackingLabel="how-demo">
+              Réserver une démo
+            </GradientButton>
+          </Link>
         </div>
       </Section>
     </>

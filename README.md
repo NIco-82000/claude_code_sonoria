@@ -163,14 +163,15 @@ Animation d'onde vocale interactive avec Canvas.
 Bouton avec tracking analytics intégré.
 
 ```tsx
-<GradientButton
-  variant="gradient"
-  size="xl"
-  trackingLabel="cta-demo"
-  asChild
->
-  <Link href="/contact">Demander une démo</Link>
-</GradientButton>
+<Link href="/contact">
+  <GradientButton
+    variant="gradient"
+    size="xl"
+    trackingLabel="cta-demo"
+  >
+    Demander une démo
+  </GradientButton>
+</Link>
 ```
 
 ### PricingTable

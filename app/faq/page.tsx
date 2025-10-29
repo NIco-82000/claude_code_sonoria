@@ -91,9 +91,11 @@ export default function FAQPage() {
           <p className="text-xl text-text-secondary mb-8">
             Notre équipe est là pour vous aider. Posez-nous vos questions.
           </p>
-          <GradientButton variant="gradient" size="xl" trackingLabel="faq-contact" asChild>
-            <Link href="/contact">Nous contacter</Link>
-          </GradientButton>
+          <Link href="/contact">
+            <GradientButton variant="gradient" size="xl" trackingLabel="faq-contact">
+              Nous contacter
+            </GradientButton>
+          </Link>
         </div>
       </Section>
     </>
